@@ -1,6 +1,8 @@
 HeatMap of different features in the dataset vs selling price: Used correlation to find out how different factors affect selling price.
 ![image](https://github.com/user-attachments/assets/d3f5421c-5c98-42f4-9b7b-b55be34caeea)
 
+
+
 Scatter Plot for max_power vs selling price
 ![image](https://github.com/user-attachments/assets/209c1797-80bc-45ab-a10e-ae4a8249c99f)
 
