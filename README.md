@@ -66,8 +66,8 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 <!-- end list -->
 
 ```bash
-git clone https://github.com/your-username/prediction-model.git
-cd prediction-model
+git clone https://github.com/Nikita0728/used_car_sp_prediction_model.git
+
 ```
 
 2.  Install the required dependencies as mentioned above.
