@@ -1,135 +1,123 @@
-**Overview**
-This repository aims to predict car prices using a dataset that contains information such as car make, model, mileage, engine size, and more. The dataset is preprocessed, followed by training of regression models to predict car prices. The models are evaluated on their accuracy and performance, with visualizations to assess their effectiveness.
+# Car Price Prediction Model
 
-**Features**
-Data Preprocessing:
+This repository contains a machine learning project to predict car prices using regression models. The goal is to build and evaluate models that can accurately estimate a car's price based on its features like make, model, mileage, and engine size.
 
-Handle missing data.
+---
 
-Encode categorical variables.
+## 1. Overview
 
-Scale numerical features.
+This project uses a machine learning approach to predict car prices. It includes:
 
-Machine Learning Models:
+* **Data preprocessing** to clean and prepare the dataset.
+* **Training** two regression models: **Linear Regression** and **Random Forest Regressor**.
+* **Evaluation** of the models using metrics like **R² Score** and **Mean Squared Error (MSE)**.
+* **Data visualizations** to understand the dataset and model performance.
 
-**Linear Regression:** A basic regression model to predict continuous variables.
+---
 
-**Random Forest Regressor:** An ensemble learning method for regression tasks, providing better accuracy.
+## 2. Features
 
-**Model Evaluation:**
+### Data Preprocessing
+* Handles **missing data**.
+* Encodes **categorical variables**.
+* Scales **numerical features**.
 
-R² Score: A statistical measure indicating how well the model fits the data.
+### Machine Learning Models
+* **Linear Regression:** A simple, foundational model for predicting continuous values.
+* **Random Forest Regressor:** An advanced ensemble method that typically offers higher accuracy.
 
-Mean Squared Error (MSE): Measures the average of the squares of the errors between predicted and actual values.
+### Model Evaluation
+* **R² Score:** A key metric that shows how well the model's predictions align with actual values.
+* **Mean Squared Error (MSE):** Measures the average squared difference between predicted and actual prices.
 
-**Data Visualization:**
+---
 
-Distribution of car prices and features.
+## 3. Getting Started
 
-Model performance visualizations using matplotlib and seaborn.
+### Requirements
+To run this project, you'll need the following Python libraries:
+* `pandas`
+* `numpy`
+* `matplotlib`
+* `seaborn`
+* `scikit-learn`
 
-Requirements
-To run this project, you need the following Python libraries:
+Alternatively, if you have a requirements.txt file, you can use:
 
-pandas — For data manipulation and analysis.
+Bash
 
-numpy — For numerical operations.
-
-matplotlib — For creating visualizations.
-
-seaborn — For statistical data visualization.
-
-scikit-learn — For machine learning models and metrics.
-
-You can install the required dependencies by running:
-
-bash
-Copy
 pip install -r requirements.txt
-If you don't have the requirements.txt file, you can manually install the libraries:
-
-bash
-Copy
-pip install pandas numpy matplotlib seaborn scikit-learn
 Installation
-Clone the repository:
+Clone the repository to your local machine:
 
-bash
-Copy
-git clone https://github.com/your-username/prediction-model.git
+Bash
+
+git clone [https://github.com/Nikita0728/used_car_sp_prediction_model.git)
 cd prediction-model
-Install the dependencies as mentioned above.
+Install the required dependencies as mentioned above.
 
-**Usage**
-1. Dataset
-The dataset used in this project is a CSV file (car.csv) containing various features related to cars. This dataset includes information such as price, make, model, and other car attributes. Ensure that this file is available in your project directory.
+4. Usage
+Dataset
+The project uses a CSV file named car.csv. Please ensure this file is present in the project directory. The dataset contains various car-related features, including the target variable, price.
 
-2. Running the Jupyter Notebook
-The core of the analysis is contained in the Jupyter notebook prediction_model.ipynb. To execute the code:
+Running the Jupyter Notebook
+The core of the project is the Jupyter Notebook prediction_model.ipynb. To execute the code, follow these steps:
 
-Launch the Jupyter notebook:
+Launch Jupyter Notebook from your terminal:
 
-bash
-Copy
+Bash
+
 jupyter notebook prediction_model.ipynb
-Follow the instructions in the notebook, which includes:
+Follow the instructions within the notebook, which will guide you through data loading, preprocessing, model training, and evaluation.
 
-Data loading.
+5. Model Performance
+The following table summarizes the evaluation metrics for the trained models:
 
-Preprocessing steps.
+Model
 
-Model training.
+RMSE
 
-Evaluation and visualization.
+R² Score
 
-**3. Model Training**
-The machine learning models are trained using the following steps:
+Linear Regression
 
-Data Loading: The dataset is loaded into a Pandas DataFrame.
+307564.98
 
-Preprocessing: Handle missing values, encode categorical columns, and scale numerical features.
+0.5687
 
-Model Training: Both Linear Regression and Random Forest Regressor models are trained on the dataset.
+Random Forest Regressor
 
-Evaluation: The models are evaluated using R² score and Mean Squared Error.
+129600.24
 
-4. **Visualization**
-Various visualizations are generated, including:
-
-Histograms to visualize the distribution of features and target variable (car price).
-HeatMap of different features in the dataset vs selling price: Used correlation to find out how different factors affect selling price.
-![image](https://github.com/user-attachments/assets/d3f5421c-5c98-42f4-9b7b-b55be34caeea)
-
-**Scatter plots for feature correlation.**
-Scatter Plot for max_power vs selling price
-![image](https://github.com/user-attachments/assets/209c1797-80bc-45ab-a10e-ae4a8249c99f)
+0.9234
 
 
-**Model Evaluation**
-Linear Regression: A simple and interpretable model that provides a baseline.
-Linear Regression:
-RMSE= 307564.984846094
-R2 Score: 0.5686872253789013
-Random Forest Regressor: An ensemble model that generally provides better performance than linear regression.
-Random Forest:
-RMSE: 129600.24125791158
-R2 Score: 0.9234173907610739
-Both models are evaluated using:
+Export to Sheets
+The Random Forest Regressor demonstrates superior performance with a significantly lower RMSE and a much higher R² Score, indicating a better fit to the data.
 
-R² Score: Measures how well the model predicts the target variable.
+6. Data Visualization
+The notebook includes several visualizations to help you understand the data and model performance.
 
-Mean Squared Error: Measures the model's error between the predicted and actual values.
+Feature Correlation Heatmap
+A heatmap is used to visualize the correlation between different features and the selling price, helping to identify the most influential factors.
+<img width="599" height="491" alt="image" src="https://github.com/user-attachments/assets/d130dcb8-c9f1-4185-8875-f30b1dbc93f8" />
 
-Contributing
-Contributions to the repository are welcome! If you find any issues, bugs, or have suggestions for improvements, feel free to:
+Scatter Plot
+A scatter plot visualizes the relationship between max_power and selling_price.
+<img width="567" height="448" alt="image" src="https://github.com/user-attachments/assets/3fc78f92-2965-4b2c-93d2-f2d038649951" />
+
+7. Contributing
+Contributions are welcome! If you find any issues, bugs, or have suggestions for improvements, feel free to:
 
 Fork the repository.
 
-Create a feature branch.
+Create a new feature branch (git checkout -b feature/your-feature).
+
+Commit your changes (git commit -m 'Add new feature').
+
+Push to the branch (git push origin feature/your-feature).
 
 Submit a pull request.
-
-Please ensure to follow best practices when contributing, including writing clear commit messages and providing documentation for any new code.
 
 
 
