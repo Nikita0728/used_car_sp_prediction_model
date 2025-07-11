@@ -1,7 +1,7 @@
-Overview
+**Overview**
 This repository aims to predict car prices using a dataset that contains information such as car make, model, mileage, engine size, and more. The dataset is preprocessed, followed by training of regression models to predict car prices. The models are evaluated on their accuracy and performance, with visualizations to assess their effectiveness.
 
-Features
+**Features**
 Data Preprocessing:
 
 Handle missing data.
@@ -12,17 +12,17 @@ Scale numerical features.
 
 Machine Learning Models:
 
-Linear Regression: A basic regression model to predict continuous variables.
+**Linear Regression:** A basic regression model to predict continuous variables.
 
-Random Forest Regressor: An ensemble learning method for regression tasks, providing better accuracy.
+**Random Forest Regressor:** An ensemble learning method for regression tasks, providing better accuracy.
 
-Model Evaluation:
+**Model Evaluation:**
 
 R² Score: A statistical measure indicating how well the model fits the data.
 
 Mean Squared Error (MSE): Measures the average of the squares of the errors between predicted and actual values.
 
-Data Visualization:
+**Data Visualization:**
 
 Distribution of car prices and features.
 
@@ -60,7 +60,7 @@ git clone https://github.com/your-username/prediction-model.git
 cd prediction-model
 Install the dependencies as mentioned above.
 
-Usage
+**Usage**
 1. Dataset
 The dataset used in this project is a CSV file (car.csv) containing various features related to cars. This dataset includes information such as price, make, model, and other car attributes. Ensure that this file is available in your project directory.
 
@@ -82,7 +82,7 @@ Model training.
 
 Evaluation and visualization.
 
-3. Model Training
+**3. Model Training**
 The machine learning models are trained using the following steps:
 
 Data Loading: The dataset is loaded into a Pandas DataFrame.
@@ -93,19 +93,19 @@ Model Training: Both Linear Regression and Random Forest Regressor models are tr
 
 Evaluation: The models are evaluated using R² score and Mean Squared Error.
 
-4. Visualization
+4. **Visualization**
 Various visualizations are generated, including:
 
 Histograms to visualize the distribution of features and target variable (car price).
 HeatMap of different features in the dataset vs selling price: Used correlation to find out how different factors affect selling price.
 ![image](https://github.com/user-attachments/assets/d3f5421c-5c98-42f4-9b7b-b55be34caeea)
 
-Scatter plots for feature correlation.
+**Scatter plots for feature correlation.**
 Scatter Plot for max_power vs selling price
 ![image](https://github.com/user-attachments/assets/209c1797-80bc-45ab-a10e-ae4a8249c99f)
 
 
-Model Evaluation
+**Model Evaluation**
 Linear Regression: A simple and interpretable model that provides a baseline.
 Linear Regression:
 RMSE= 307564.984846094
